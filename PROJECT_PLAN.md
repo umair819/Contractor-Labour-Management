@@ -209,3 +209,42 @@ Contractor-Labour-Management/
 - School-App ka HR/Payroll module reuse karo labour wages ke liye
 - Civil engineers aur project managers Facebook groups per target karo
 - Rs. 10,000-25,000 pricing — contractors yeh easily afford kar sakte hain
+
+---
+
+## 🔐 Final Phase: Security & Licensing System (Launch Se Pehle Lazim)
+
+> **Is phase ko complete kiye baghair software sell nahi karna!**
+> **Note:** School-App jaisi same Python/Flask architecture — same `license_manager.py` reuse.
+
+### Steps:
+
+#### Step 1 — PC ID Generation (Python)
+- [ ] `license_manager.py` → `MachineGuid` → SHA256 (School-App se copy karo)
+- [ ] Project limit enforce karo trial mein (sirf 1 active project)
+
+#### Step 2 — Trial (Server-Side, 15 days, 1 project)
+- [ ] "Trial — X days, 1 project active"
+- [ ] Server pe register, file nahi
+
+#### Step 3 — License Activation
+- [ ] `XXXX-XXXX-XXXX-XXXX` key (Basic/Professional/Enterprise)
+- [ ] `POST /activate` → `{key, pc_id, project_limit}` → encrypted save
+
+#### Step 4 — Startup Validation
+- [ ] PC ID + expiry + project limit verify
+- [ ] Har 3 din online + 7-din offline grace
+
+#### Step 5 — Deactivation + Lock
+#### Step 6 — Code Protection (PyArmor + PyInstaller)
+#### Step 7 — Admin License Panel
+
+### Phase Table:
+| Phase | Tasks | Status |
+|-------|-------|--------|
+| Phase 8 | PC ID + Trial (1 project limit) | 🔴 Not Started |
+| Phase 8 | License activation | 🔴 Not Started |
+| Phase 8 | Startup + project limit validation | 🔴 Not Started |
+| Phase 8 | Deactivation + lock | 🔴 Not Started |
+| Phase 8 | Admin license panel | 🔴 Not Started |
+| Phase 8 | PyArmor + PyInstaller build | 🔴 Not Started |
