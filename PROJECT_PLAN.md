@@ -148,7 +148,7 @@ Yeh ek **underserved, high-value niche** hai.
 ## 📁 Planned Folder Structure
 
 ```
-Contractor-Labour-Management/
+CrewLink/
 ├── app.py                    # Flask backend
 ├── database.py
 ├── db_config.json
@@ -206,7 +206,7 @@ Contractor-Labour-Management/
 - Naam rakhein: **TaameerPro** ya **ContractorPak** ya **SiteManager**
 - Urdu interface bohot zaroori hai (site supervisors English nahi jaante)
 - Android tablet version socho — site pe phone/tablet zyada use hota hai laptop se
-- School-App ka HR/Payroll module reuse karo labour wages ke liye
+- Acadexa ka HR/Payroll module reuse karo labour wages ke liye
 - Civil engineers aur project managers Facebook groups per target karo
 - Rs. 10,000-25,000 pricing — contractors yeh easily afford kar sakte hain
 
@@ -215,12 +215,12 @@ Contractor-Labour-Management/
 ## 🔐 Final Phase: Security & Licensing System (Launch Se Pehle Lazim)
 
 > **Is phase ko complete kiye baghair software sell nahi karna!**
-> **Note:** School-App jaisi same Python/Flask architecture — same `license_manager.py` reuse.
+> **Note:** Acadexa jaisi same Python/Flask architecture — same `license_manager.py` reuse.
 
 ### Steps:
 
 #### Step 1 — PC ID Generation (Python)
-- [ ] `license_manager.py` → `MachineGuid` → SHA256 (School-App se copy karo)
+- [ ] `license_manager.py` → `MachineGuid` → SHA256 (Acadexa se copy karo)
 - [ ] Project limit enforce karo trial mein (sirf 1 active project)
 
 #### Step 2 — Trial (Server-Side, 15 days, 1 project)
